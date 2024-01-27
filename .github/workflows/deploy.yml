@@ -1,9 +1,12 @@
 name: Deployment
-on: 
+on:
   workflow_dispatch:
   push:
+    branches:
+      - main
+      - dev
   pull_request:
-      branches:
+    branches:
       - main
       - dev
 jobs:
